@@ -3,16 +3,22 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include "process.h"
 #include <WinSock2.h>
 #pragma comment(lib, "ws2_32")
 using namespace std;
 
+#pragma pack(push, 1) // 구조체의 멤버들이 1바이트 경계로 정렬되도록 설정
+struct Data
+{
+    string Message;
+    string Name;
+};
+#pragma pack(pop) // 이전 메모리 정렬 설정을 복원. 뒤로 사용하는 구조체들은 정렬안되게 하기.
+
 int main() {
     WSAData wsaData;
-    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0) {
-        cout << "WSAStartup failed with error: " << WSAGetLastError() << endl;
-        return 1;
-    }
+    WSAStartup(MAKEWORD(2, 2), &wsaData);
 
     sockaddr_in ServerSocketAddress;
     memset(&ServerSocketAddress, 0, sizeof(ServerSocketAddress));
@@ -21,58 +27,34 @@ int main() {
     ServerSocketAddress.sin_port = htons(10880);
 
     SOCKET ServerSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
-    if (ServerSocket == INVALID_SOCKET) {
-        cout << "Socket creation failed with error: " << WSAGetLastError() << endl;
-        WSACleanup();
-        return 1;
-    }
 
-    if (connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress)) == SOCKET_ERROR) {
-        cout << "Connection failed with error: " << WSAGetLastError() << endl;
-        closesocket(ServerSocket);
-        WSACleanup();
-        return 1;
-    }
-
-    // 서버로부터 "10 + 20" 문자열 수신
+    connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress));
+    _beginthread(RecvThread, 0, (void*)&ServerSocket);
     char buffer[1024] = { 0, };
-    int recvBytes = recv(ServerSocket, buffer, sizeof(buffer) - 1, 0); // -1 for null terminator
-    if (recvBytes > 0) {
-        buffer[recvBytes] = '\0'; // Null-terminate the received data
-        printf("Client received: %s\n", buffer);
+    int recvBytes = recv(ServerSocket, buffer, sizeof(buffer) - 1, 0); 
 
-        // 사용자로부터 결과 입력 받기
-        int result;
-        cout << "Enter the result for the expression: ";
-        cin >> result;
-
-        // 결과를 서버에 전송
-        string resultStr = to_string(result);
-        send(ServerSocket, resultStr.c_str(), (int)resultStr.length(), 0);
-
-        // 서버로부터 메시지 수신
-        char response[1024] = { 0 };
-        recvBytes = recv(ServerSocket, response, sizeof(response) - 1, 0); // -1 for null terminator
-        if (recvBytes > 0) {
-            response[recvBytes] = '\0'; // Null-terminate the received data
-            printf("Client received message from server: %s\n", response);
-        }
-        else if (recvBytes == 0) {
-            cout << "Connection closed by server." << endl;
-        }
-        else {
-            cout << "recv failed with error: " << WSAGetLastError() << endl;
-        }
-    }
-    else if (recvBytes == 0) {
-        cout << "Connection closed by server." << endl;
-    }
-    else {
-        cout << "recv failed with error: " << WSAGetLastError() << endl;
-    }
 
     closesocket(ServerSocket);
     WSACleanup();
 
     return 0;
+}
+void RecvThread(void* Arg)
+{
+    Data Packet;
+    char Buffer[1024] = { 0, };
+    SOCKET ServerSocket = *(SOCKET*)(Arg);
+    while (true)
+    {
+        int RecvByte = recv(ServerSocket, (char*)&Packet, sizeof(Packet), 0);
+        if (RecvByte <= 0)
+        {
+            break;
+        }
+        else
+        {
+            Buffer[RecvByte] = '\0'; // 문자열의 끝을 나타내기 위해 널 종료를 추가
+            cout << Buffer << endl;
+        }
+    }
 }
