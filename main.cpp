@@ -8,17 +8,6 @@
 #pragma comment(lib, "ws2_32")
 using namespace std;
 
-#pragma pack(push, 1)
-struct Data
-{
-    float Number1;
-    char Operator;
-    float Number2;
-};
-#pragma pack(pop) 
-
-Data PlayerData;
-
 int main() 
 {
     WSAData wsaData;
@@ -34,30 +23,24 @@ int main()
 
     connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress));
 
-    char Message;
 
-    while (true)
+    while (1)
     {
-        Data SendPacket;
+        char Number;
+        char Buffer[1024] = { 0, };
 
-        float Number1;
-        char Operator;
-        float Number2;
-        cout << "숫자1을 입력해주세요" << endl;
-        cin >> Number1;
-        cout << "연산자를 입력해주세요" << endl;
-        cin >> Operator;
-        cout << "숫자2을 입력해주세요" << endl;
-        cin >> Number2;
+        cout << "계산할 값을 입력해주세요" << endl;
+        cout << "Ex) 1+1" << endl;
+        cin >> Number;
 
-        SendPacket.Number1 = Number1;
-        SendPacket.Operator = Operator;
-        SendPacket.Number2 = Number2;
-        send(ServerSocket, (char*)&SendPacket, sizeof(SendPacket), 0);
-        char Buffer[1024];
-        int RecvByte = recv(ServerSocket, Buffer, (int)sizeof(Buffer), 0);
+        sprintf(Buffer, "%d", Number);
 
-        cout << "결과:" << Buffer << endl;
+        send(ServerSocket, Buffer, (int)sizeof(Buffer), 0);
+
+        char buffer[1024];
+        int RecvByte = recv(ServerSocket, buffer, (int)sizeof(buffer), 0);
+
+        cout << "결과:" << buffer << endl;
     }
 
     closesocket(ServerSocket);
