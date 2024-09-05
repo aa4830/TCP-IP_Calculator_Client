@@ -11,9 +11,9 @@ using namespace std;
 #pragma pack(push, 1)
 struct Data
 {
-    short Number1;
+    float Number1;
     char Operator;
-    short Number2;
+    float Number2;
 };
 #pragma pack(pop) 
 
@@ -40,9 +40,9 @@ int main()
     {
         Data SendPacket;
 
-        short Number1;
+        float Number1;
         char Operator;
-        short Number2;
+        float Number2;
         cout << "숫자1을 입력해주세요" << endl;
         cin >> Number1;
         cout << "연산자를 입력해주세요" << endl;
