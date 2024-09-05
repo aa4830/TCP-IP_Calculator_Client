@@ -8,36 +8,16 @@
 #pragma comment(lib, "ws2_32")
 using namespace std;
 
-#pragma pack(push, 1) // 구조체의 멤버들이 1바이트 경계로 정렬되도록 설정
+#pragma pack(push, 1)
 struct Data
 {
-    char Message;
+    short Number1;
+    char Operator;
+    short Number2;
 };
-#pragma pack(pop) // 이전 메모리 정렬 설정을 복원. 뒤로 사용하는 구조체들은 정렬안되게 하기.
+#pragma pack(pop) 
 
 Data PlayerData;
-
-void RecvThread(void* Arg)
-{
-    Data RecvPacket;
-    SOCKET ServerSocket = *(SOCKET*)(Arg);
-    while (true)
-    {
-        int RecvByte = recv(ServerSocket, (char*)&RecvPacket, sizeof(RecvPacket), 0);
-        if (RecvByte <= 0)
-        {
-            closesocket(ServerSocket);
-            WSACleanup();
-            _endthread();
-            return;
-        }
-        else
-        {
-            PlayerData.Message =RecvPacket.Message;
-            cout << PlayerData.Message << endl;
-        }
-    }
-}
 
 int main() 
 {
@@ -53,16 +33,31 @@ int main()
     SOCKET ServerSocket = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
 
     connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress));
-    _beginthread(RecvThread, 0, (void*)&ServerSocket);
 
     char Message;
 
     while (true)
     {
         Data SendPacket;
-        cin >> Message;
-        SendPacket.Message = Message;
+
+        short Number1;
+        char Operator;
+        short Number2;
+        cout << "숫자1을 입력해주세요" << endl;
+        cin >> Number1;
+        cout << "연산자를 입력해주세요" << endl;
+        cin >> Operator;
+        cout << "숫자2을 입력해주세요" << endl;
+        cin >> Number2;
+
+        SendPacket.Number1 = Number1;
+        SendPacket.Operator = Operator;
+        SendPacket.Number2 = Number2;
         send(ServerSocket, (char*)&SendPacket, sizeof(SendPacket), 0);
+        char Buffer[1024];
+        int RecvByte = recv(ServerSocket, Buffer, (int)sizeof(Buffer), 0);
+
+        cout << "결과:" << Buffer << endl;
     }
 
     closesocket(ServerSocket);

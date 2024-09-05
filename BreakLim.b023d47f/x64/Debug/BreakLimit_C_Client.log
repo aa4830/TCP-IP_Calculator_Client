@@ -1,4 +1,3 @@
 ﻿  main.cpp
-C:\Work\TCP-IP_Client\main.cpp(59,10): warning C4101: 'Name': unreferenced local variable
-C:\Work\TCP-IP_Client\main.cpp(58,10): warning C4101: 'Message': unreferenced local variable
+C:\Work\TCP-IP_Client\main.cpp(37,10): warning C4101: 'Message': unreferenced local variable
   BreakLimit_C_Client.vcxproj -> C:\Work\TCP-IP_Client\x64\Debug\BreakLimit_C_Client.exe
