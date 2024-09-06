@@ -26,21 +26,20 @@ int main()
 
     while (1)
     {
-        char Number;
-        char Buffer[1024] = { 0, };
+        string Input;
+        char SendBuffer[1024] = { 0, };
 
         cout << "계산할 값을 입력해주세요" << endl;
         cout << "Ex) 1+1" << endl;
-        cin >> Number;
+        cin >> Input;
 
-        sprintf(Buffer, "%d", Number);
+        strcpy(SendBuffer, Input.c_str());
+        send(ServerSocket, SendBuffer, sizeof(SendBuffer), 0);
 
-        send(ServerSocket, Buffer, (int)sizeof(Buffer), 0);
+        char RecvBuffer[1024] = { 0, };
+        int RecvByte = recv(ServerSocket, RecvBuffer, sizeof(RecvBuffer), 0);
 
-        char buffer[1024];
-        int RecvByte = recv(ServerSocket, buffer, (int)sizeof(buffer), 0);
-
-        cout << "결과:" << buffer << endl;
+        cout << "결과:" << RecvBuffer << endl;
     }
 
     closesocket(ServerSocket);
