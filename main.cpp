@@ -1,7 +1,6 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "SDL.h"
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -12,7 +11,7 @@
 
 using namespace std;
 
-int SDL_main(int argc, char* argv[])
+int main()
 {
     WSAData wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -27,34 +26,12 @@ int SDL_main(int argc, char* argv[])
 
     connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress));
 
-    SDL_Init(SDL_INIT_EVERYTHING);
+    
 
-    SDL_Window* MyWindow = SDL_CreateWindow("Client", 100, 100, 800, 600, SDL_WINDOW_OPENGL);
-    SDL_Renderer* MyRenderer = SDL_CreateRenderer(MyWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC
-        | SDL_RENDERER_TARGETTEXTURE);
-    SDL_Event MyEvent;
-
-    bool bIsRunning = true;
-
-    while (bIsRunning)
+    while (1)
     {
-        SDL_PollEvent(&MyEvent);
-        switch (MyEvent.type)
-        {
-        case SDL_QUIT:
-            bIsRunning = false;
-            break;
-        case SDL_KEYDOWN:
-            switch (MyEvent.key.keysym.sym)
-            {
-            case SDLK_q:
-
-            }
-        }
+        
     }
-    SDL_DestroyRenderer(MyRenderer);
-    SDL_DestroyWindow(MyWindow);
-    SDL_Quit();
 
 
     closesocket(ServerSocket);
