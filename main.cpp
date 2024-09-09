@@ -1,6 +1,7 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
 
+#include "SDL.h"
 #include <stdio.h>
 #include <iostream>
 #include <string>
@@ -11,7 +12,7 @@
 
 using namespace std;
 
-int main()
+int SDL_main(int argc, char* argv[])
 {
     WSAData wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
