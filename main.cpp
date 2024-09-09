@@ -1,14 +1,18 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
+
+#include "SDL.h"
 #include <stdio.h>
 #include <iostream>
 #include <string>
 #include "process.h"
 #include <WinSock2.h>
+
 #pragma comment(lib, "ws2_32")
+
 using namespace std;
 
-int main() 
+int SDL_main(int argc, char* argv[])
 {
     WSAData wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -23,24 +27,35 @@ int main()
 
     connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress));
 
+    SDL_Init(SDL_INIT_EVERYTHING);
 
-    while (1)
+    SDL_Window* MyWindow = SDL_CreateWindow("Client", 100, 100, 800, 600, SDL_WINDOW_OPENGL);
+    SDL_Renderer* MyRenderer = SDL_CreateRenderer(MyWindow, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC
+        | SDL_RENDERER_TARGETTEXTURE);
+    SDL_Event MyEvent;
+
+    bool bIsRunning = true;
+
+    while (bIsRunning)
     {
-        string Input;
-        char SendBuffer[1024] = { 0, };
+        SDL_PollEvent(&MyEvent);
+        switch (MyEvent.type)
+        {
+        case SDL_QUIT:
+            bIsRunning = false;
+            break;
+        case SDL_KEYDOWN:
+            switch (MyEvent.key.keysym.sym)
+            {
+            case SDLK_q:
 
-        cout << "계산할 값을 입력해주세요" << endl;
-        cout << "Ex) 1+1" << endl;
-        cin >> Input;
-
-        strcpy(SendBuffer, Input.c_str());
-        send(ServerSocket, SendBuffer, sizeof(SendBuffer), 0);
-
-        char RecvBuffer[1024] = { 0, };
-        int RecvByte = recv(ServerSocket, RecvBuffer, sizeof(RecvBuffer), 0);
-
-        cout << "결과:" << RecvBuffer << endl;
+            }
+        }
     }
+    SDL_DestroyRenderer(MyRenderer);
+    SDL_DestroyWindow(MyWindow);
+    SDL_Quit();
+
 
     closesocket(ServerSocket);
     WSACleanup();
