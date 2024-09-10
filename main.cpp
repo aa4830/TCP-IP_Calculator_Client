@@ -17,8 +17,8 @@ using namespace std;
 
 int SDL_main(int argc, char* argv[])
 {
-    UI GameUI;
-    Window GameWindow;
+    UI MyUI;
+    Window MyWindow;
     SDL_Event MyEvent;
 
     WSAData wsaData;
@@ -39,21 +39,17 @@ int SDL_main(int argc, char* argv[])
     while (bIsRunning)
     {
         SDL_PollEvent(&MyEvent);
-        GameUI.HandleEvent(MyEvent);
+        MyUI.HandleEvent(MyEvent);
         switch (MyEvent.type)
         {
         case SDL_KEYDOWN:
             switch (MyEvent.key.keysym.sym)
             {
-            case 1:
-                cout << "1" << endl;
-                break;
             }
-
         }
-        GameWindow.Render();
-        GameUI.Render(GameWindow.GetSurface());
-        GameWindow.Update();
+        MyWindow.Render(); // Surface 만들기
+        MyUI.Render(MyWindow.GetSurface()); //Surface에 버튼 그리기
+        MyWindow.Update(); // Surface에 그린 내용 반영하기.
     }
 
     SDL_Quit();
