@@ -20,7 +20,6 @@ public:
             HandleMouseButton(E.button);
         };
     }
-    
     void HandleMouseButton(const SDL_MouseButtonEvent& E)
     {
         if (IsWithinBounds(E.x, E.y)) 

@@ -1,3 +1,2 @@
 ﻿  main.cpp
-C:\Work\TCP-IP_Client\main.cpp(48,13): warning C4060: switch statement contains no 'case' or 'default' labels
   BreakLimit_C_Client.vcxproj -> C:\Work\TCP-IP_Client\x64\Debug\BreakLimit_C_Client.exe

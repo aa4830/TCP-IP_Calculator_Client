@@ -2,7 +2,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "SDL.h"
+#include <SDL_ttf.h>
 #include <stdio.h>
+#include "Text.h"
 #include <iostream>
 #include <WinSock2.h>
 #include "Ui.h"
@@ -12,14 +14,19 @@
 #pragma comment(lib, "SDL2")
 #pragma comment(lib, "SDL2main")
 
-using namespace std;
+Window MyWindow;
+Text MyText;
 
+using namespace std;
 
 int SDL_main(int argc, char* argv[])
 {
+    TTF_Init();
     UI MyUI;
-    Window MyWindow;
     SDL_Event MyEvent;
+
+    MyWindow.Render(); // Surface 만들기
+    MyUI.Render(MyWindow.GetSurface()); //Surface에 버튼 그리기
 
     WSAData wsaData;
     WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -38,17 +45,14 @@ int SDL_main(int argc, char* argv[])
 
     while (bIsRunning)
     {
-        SDL_PollEvent(&MyEvent);
-        MyUI.HandleEvent(MyEvent);
-        switch (MyEvent.type)
+        while (SDL_PollEvent(&MyEvent))
         {
-        case SDL_KEYDOWN:
-            switch (MyEvent.key.keysym.sym)
+            MyUI.HandleEvent(MyEvent);
+            if (MyEvent.type == SDL_QUIT)
             {
+                bIsRunning = false; 
             }
         }
-        MyWindow.Render(); // Surface 만들기
-        MyUI.Render(MyWindow.GetSurface()); //Surface에 버튼 그리기
         MyWindow.Update(); // Surface에 그린 내용 반영하기.
     }
 
