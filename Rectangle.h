@@ -10,7 +10,7 @@ public:
 
     void Render(SDL_Surface* Surface)
     {
-        SDL_FillRect(Surface, &Rect, SDL_MapRGB(Surface->format, 255, 0, 0));
+        SDL_FillRect(Surface, &Rect, SDL_MapRGB(Surface->format, 0, 0, 0));
     }
 
     bool IsWithinBounds(int x, int y) const 

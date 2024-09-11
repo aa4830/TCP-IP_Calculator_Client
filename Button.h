@@ -10,7 +10,7 @@ public:
 
     virtual void HandleLeftClick()
     {
-        std::cout << "Button Click" << std::endl;
+       
     }
 
     void HandleEvent(const SDL_Event& E) 
@@ -31,4 +31,5 @@ public:
             }
         }
     }
+    
 };

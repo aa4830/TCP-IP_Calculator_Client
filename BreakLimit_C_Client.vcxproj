@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
+    <ClInclude Include="ClientSocket.h" />
     <ClInclude Include="Number1Button.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Text.h" />

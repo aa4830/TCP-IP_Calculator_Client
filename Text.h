@@ -7,50 +7,32 @@ class Text
 {
 public:
     TTF_Font* Font = nullptr;
-    SDL_Color TextColor = { 0, };
-    SDL_Surface* TextSurface = nullptr;
-    SDL_Rect TextPosition = { 0, };
+    SDL_Color ResultTextColor = { 0, };
+    SDL_Color NumberTextColor = { 0, };
+    SDL_Surface* ResultTextSurface = nullptr;
+    SDL_Surface* Number1TextSurface = nullptr;
+    SDL_Rect ResultTextPosition = { 0, };
+    SDL_Rect Number1TextPosition = { 0, };
+    std::string CurrentText;
+    std::string NewText;
 
     Text()
     {
         TTF_Init();
-        Font = TTF_OpenFont("C:\\Work\\TCP-IP_Client\\Fonts\\AdultFont.ttf", 25);
+        Font = TTF_OpenFont("C:\\Work\\TCP-IP_Client\\Fonts\\AdultFont.ttf", 100);
         if (Font == nullptr)
         {
             printf("Failed to load font: %s\n", TTF_GetError());
         }
-        TextColor = { 255, 255, 255 };
-        TextPosition = { 280, 10, 100, 100 };
+        ResultTextColor = { 0, 0, 0 };
+        NumberTextColor = { 255, 255, 255 };
+        ResultTextPosition = { 30,30,80,80 };
+        Number1TextPosition = { 55,450,80,80 };
     };
-
-    void SetFontSize(int NewFontSize)
-    {
-        TTF_SetFontSize(Font, NewFontSize);
-    }
-
-    void Render(SDL_Surface* DestinationSurface)
-    {
-        SDL_BlitSurface(TextSurface, nullptr,DestinationSurface, &TextPosition);
-    }
-
-    void CreateSurface(std::string Content) 
-    {
-        if (Font == nullptr)
-        {
-            printf("Font is not loaded: %s\n", TTF_GetError());
-            return;
-        }
-        SDL_Surface* NewSurface = TTF_RenderText_Solid(Font, Content.c_str(), TextColor);
-        if (NewSurface !=nullptr)
-        {
-            SDL_FreeSurface(TextSurface);
-            TextSurface = NewSurface;
-        }
-    }
 
     ~Text()
     {
-        SDL_FreeSurface(TextSurface);
+        SDL_FreeSurface(ResultTextSurface);
         if (TTF_WasInit()) 
         {
             TTF_CloseFont(Font);

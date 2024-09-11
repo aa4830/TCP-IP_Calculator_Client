@@ -16,7 +16,20 @@ public:
 
     void HandleLeftClick() override
     {
-        std::cout << "S" << std::endl;
-
+        std::string NewText = "1";
+        if (MyText.ResultTextSurface != nullptr)
+        {
+            SDL_FreeSurface(MyText.ResultTextSurface);
+        }
+        MyText.ResultTextSurface = TTF_RenderText_Solid(MyText.Font, MyText.CurrentText.append(NewText).c_str(), MyText.ResultTextColor);
+        if (MyText.ResultTextSurface == nullptr)
+        {
+            printf("Font Missing %s\n", TTF_GetError());
+        }
+        else
+        {
+            SDL_BlitSurface(MyText.ResultTextSurface, nullptr, MyWindow.GetSurface(), &MyText.ResultTextPosition);
+        }
     }
+    
 };
