@@ -135,7 +135,6 @@
   <ItemGroup>
     <ClInclude Include="AddButton.h" />
     <ClInclude Include="Button.h" />
-    <ClInclude Include="ClientSocket.h" />
     <ClInclude Include="DivideButton.h" />
     <ClInclude Include="LastTextDeleteButton.h" />
     <ClInclude Include="MinusButton.h" />
@@ -152,6 +151,7 @@
     <ClInclude Include="Number9Button.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="ResultButton.h" />
+    <ClInclude Include="Socket.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="TextClearButton.h" />
     <ClInclude Include="Ui.h" />

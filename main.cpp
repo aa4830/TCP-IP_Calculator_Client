@@ -3,9 +3,9 @@
 
 #include "SDL.h"
 #include "Text.h"
-#include "ClientSocket.h"
 #include <iostream>
 #include "Ui.h"
+#include "Socket.h"
 #include "Window.h"
 
 #pragma comment(lib, "SDL2")
@@ -20,11 +20,11 @@ int SDL_main(int argc, char* argv[])
 {
     UI MyUI;
     SDL_Event MyEvent;
-    ClientSocket MyClientSocket;
+    Socket MySocket;
+
 
     MyWindow.Render(); // Surface 만들기
     MyUI.Render(MyWindow.GetSurface()); //Surface에 버튼 그리기
-
     MyWindow.DrawResultBoard();
     MyWindow.Draw1TextOnButton();
     MyWindow.Draw2TextOnButton();
@@ -44,13 +44,10 @@ int SDL_main(int argc, char* argv[])
     MyWindow.DrawLastTextDeleteButton();
     MyWindow.TextClearButton();
 
-    MyClientSocket.CreateSocket();
-
-
     bool bIsRunning = true;
-
     while (bIsRunning)
     {
+
         while (SDL_PollEvent(&MyEvent))
         {
             MyUI.HandleEvent(MyEvent);
@@ -58,15 +55,11 @@ int SDL_main(int argc, char* argv[])
             {
                 bIsRunning = false; 
             }
-            else if (MyEvent.type == SDL_KEYDOWN)
-            {
-                    cout << "KeyDown" << endl;
-            }
         }
-        MyWindow.Update(); // Surface에 그린 내용 반영하기.
+        MyWindow.Update();
+
     }
 
     SDL_Quit();
-    MyClientSocket.CloseSocket();
     return 0;
 }
