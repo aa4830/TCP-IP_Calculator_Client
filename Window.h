@@ -13,7 +13,6 @@ public:
     {
         SDL_Init(SDL_INIT_EVERYTHING);
         SDLWindow = SDL_CreateWindow("MyCalculator", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,400, 600, 0);
-
     }
 
     ~Window() // ¼Ò¸êÀÚ
