@@ -6,24 +6,22 @@
 class Text
 {
 public:
-    TTF_Font* Font{ nullptr };
-    SDL_Surface* TextSurface{ nullptr };
-    SDL_Rect DestinationRectangle{ 280, 10, 100, 100 };
+    TTF_Font* Font = nullptr;
+    SDL_Color TextColor = { 0, };
+    SDL_Surface* TextSurface = nullptr;
+    SDL_Rect TextPosition = { 0, };
 
     Text()
     {
-        CreateSurface("X");
-    };
-
-    Text(std::string Content, int Size = 25) : Font{ TTF_OpenFont("C:\\Work\\TCP-IP_Client\\Fonts\\AdultFont.ttf", Size) }
-    {
-        if (Font == NULL) 
+        TTF_Init();
+        Font = TTF_OpenFont("C:\\Work\\TCP-IP_Client\\Fonts\\AdultFont.ttf", 25);
+        if (Font == nullptr)
         {
-            printf("Could not open font! (%s)\n", TTF_GetError());
-            return;
+            printf("Failed to load font: %s\n", TTF_GetError());
         }
-        CreateSurface(Content);
-    }
+        TextColor = { 255, 255, 255 };
+        TextPosition = { 280, 10, 100, 100 };
+    };
 
     void SetFontSize(int NewFontSize)
     {
@@ -32,13 +30,18 @@ public:
 
     void Render(SDL_Surface* DestinationSurface)
     {
-        SDL_BlitSurface(TextSurface, nullptr,DestinationSurface, &DestinationRectangle);
+        SDL_BlitSurface(TextSurface, nullptr,DestinationSurface, &TextPosition);
     }
 
     void CreateSurface(std::string Content) 
     {
-        SDL_Surface* NewSurface = TTF_RenderUTF8_Blended(Font, Content.c_str(), { 255, 255, 255 } );
-        if (NewSurface !=0)
+        if (Font == nullptr)
+        {
+            printf("Font is not loaded: %s\n", TTF_GetError());
+            return;
+        }
+        SDL_Surface* NewSurface = TTF_RenderText_Solid(Font, Content.c_str(), TextColor);
+        if (NewSurface !=nullptr)
         {
             SDL_FreeSurface(TextSurface);
             TextSurface = NewSurface;

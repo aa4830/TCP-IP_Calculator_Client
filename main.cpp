@@ -21,7 +21,6 @@ using namespace std;
 
 int SDL_main(int argc, char* argv[])
 {
-    TTF_Init();
     UI MyUI;
     SDL_Event MyEvent;
 
@@ -51,6 +50,23 @@ int SDL_main(int argc, char* argv[])
             if (MyEvent.type == SDL_QUIT)
             {
                 bIsRunning = false; 
+            }
+            else if (MyEvent.type == SDL_KEYDOWN)
+            {
+                    cout << "X" << endl;
+                    if (MyText.TextSurface != nullptr)
+                    {
+                        SDL_FreeSurface(MyText.TextSurface);
+                    }
+                    MyText.TextSurface = TTF_RenderText_Solid(MyText.Font, "X", MyText.TextColor);
+                    if (MyText.TextSurface == nullptr)
+                    {
+                        printf("Failed to render text: %s\n", TTF_GetError());
+                    }
+                    else
+                    {
+                        SDL_BlitSurface(MyText.TextSurface, nullptr, MyWindow.GetSurface(), &MyText.TextPosition);
+                    }
             }
         }
         MyWindow.Update(); // Surface에 그린 내용 반영하기.

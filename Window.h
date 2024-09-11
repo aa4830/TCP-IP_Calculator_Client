@@ -32,10 +32,4 @@ public:
         return SDL_GetWindowSurface(SDLWindow); //Window Surface를 return해주는 함수
     }
 
-    void Draw()
-    {
-
-
-    }
-
 };
