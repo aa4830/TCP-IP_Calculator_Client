@@ -133,11 +133,27 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AddButton.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="ClientSocket.h" />
+    <ClInclude Include="DivideButton.h" />
+    <ClInclude Include="LastTextDeleteButton.h" />
+    <ClInclude Include="MinusButton.h" />
+    <ClInclude Include="MultiplyButton.h" />
+    <ClInclude Include="Number0Button.h" />
     <ClInclude Include="Number1Button.h" />
+    <ClInclude Include="Number2Button.h" />
+    <ClInclude Include="Number3Button.h" />
+    <ClInclude Include="Number4Button.h" />
+    <ClInclude Include="Number5Button.h" />
+    <ClInclude Include="Number6Button.h" />
+    <ClInclude Include="Number7Button.h" />
+    <ClInclude Include="Number8Button.h" />
+    <ClInclude Include="Number9Button.h" />
     <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="ResultButton.h" />
     <ClInclude Include="Text.h" />
+    <ClInclude Include="TextClearButton.h" />
     <ClInclude Include="Ui.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

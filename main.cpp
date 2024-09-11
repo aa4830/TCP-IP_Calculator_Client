@@ -27,6 +27,23 @@ int SDL_main(int argc, char* argv[])
 
     MyWindow.DrawResultBoard();
     MyWindow.Draw1TextOnButton();
+    MyWindow.Draw2TextOnButton();
+    MyWindow.Draw3TextOnButton();
+    MyWindow.Draw4TextOnButton();
+    MyWindow.Draw5TextOnButton();
+    MyWindow.Draw6TextOnButton();
+    MyWindow.Draw7TextOnButton();
+    MyWindow.Draw8TextOnButton();
+    MyWindow.Draw9TextOnButton();
+    MyWindow.Draw0TextOnButton();
+    MyWindow.DrawDivideOnButton();
+    MyWindow.DrawMinusOnButton();
+    MyWindow.DrawAddOnButton();
+    MyWindow.DrawMultiplyOnButton();
+    MyWindow.DrawResultButton();
+    MyWindow.DrawLastTextDeleteButton();
+    MyWindow.TextClearButton();
+
     MyClientSocket.CreateSocket();
 
 

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Work\\TCP-IP_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\MinusButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:MinusButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -15,16 +15,68 @@
       "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Text.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Window.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\LastTextDeleteButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:LastTextDeleteButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Ui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Ui.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number1Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number1Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number0Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number0Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number5Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number5Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number2Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number2Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\ResultButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:ResultButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\MultiplyButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:MultiplyButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number6Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number6Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number8Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number8Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number7Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number7Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number4Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number4Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Number3Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Number3Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\ClientSocket.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:ClientSocket.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Rectangle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,69 +90,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Button.h",
-              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Button.h",
-              "RelativeDocumentMoniker": "Button.h",
-              "ToolTip": "C:\\Work\\TCP-IP_Client\\Button.h",
-              "RelativeToolTip": "Button.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-11T03:15:37.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ui.h",
-              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Ui.h",
-              "RelativeDocumentMoniker": "Ui.h",
-              "ToolTip": "C:\\Work\\TCP-IP_Client\\Ui.h",
-              "RelativeToolTip": "Ui.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-09T08:12:27.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Number1Button.h",
-              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number1Button.h",
-              "RelativeDocumentMoniker": "Number1Button.h",
-              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number1Button.h",
-              "RelativeToolTip": "Number1Button.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-10T07:10:43.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Rectangle.h",
-              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Rectangle.h",
-              "RelativeDocumentMoniker": "Rectangle.h",
-              "ToolTip": "C:\\Work\\TCP-IP_Client\\Rectangle.h",
-              "RelativeToolTip": "Rectangle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-09T08:09:17.786Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MinusButton.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\MinusButton.h",
+              "RelativeDocumentMoniker": "MinusButton.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\MinusButton.h",
+              "RelativeToolTip": "MinusButton.h",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:51:03.04Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Window.h",
               "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Window.h",
               "RelativeDocumentMoniker": "Window.h",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\Window.h",
               "RelativeToolTip": "Window.h",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcBAAAAAAAAAAAqwCEBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-09T08:24:54.115Z",
               "EditorCaption": ""
@@ -113,7 +127,7 @@
               "RelativeDocumentMoniker": "Text.h",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\Text.h",
               "RelativeToolTip": "Text.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-10T06:33:13.592Z",
               "EditorCaption": ""
@@ -126,10 +140,206 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAArwCUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-02T08:00:33.454Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LastTextDeleteButton.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\LastTextDeleteButton.h",
+              "RelativeDocumentMoniker": "LastTextDeleteButton.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\LastTextDeleteButton.h",
+              "RelativeToolTip": "LastTextDeleteButton.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:56:02.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Number0Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number0Button.h",
+              "RelativeDocumentMoniker": "Number0Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number0Button.h",
+              "RelativeToolTip": "Number0Button.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:40:22.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ui.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Ui.h",
+              "RelativeDocumentMoniker": "Ui.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Ui.h",
+              "RelativeToolTip": "Ui.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-09T08:12:27.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Number5Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number5Button.h",
+              "RelativeDocumentMoniker": "Number5Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number5Button.h",
+              "RelativeToolTip": "Number5Button.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:34.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Number2Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number2Button.h",
+              "RelativeDocumentMoniker": "Number2Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number2Button.h",
+              "RelativeToolTip": "Number2Button.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:08.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Number6Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number6Button.h",
+              "RelativeDocumentMoniker": "Number6Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number6Button.h",
+              "RelativeToolTip": "Number6Button.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:43.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ResultButton.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\ResultButton.h",
+              "RelativeDocumentMoniker": "ResultButton.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\ResultButton.h",
+              "RelativeToolTip": "ResultButton.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T05:00:21.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MultiplyButton.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\MultiplyButton.h",
+              "RelativeDocumentMoniker": "MultiplyButton.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\MultiplyButton.h",
+              "RelativeToolTip": "MultiplyButton.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwCIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:57:09.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TextClearButton.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\TextClearButton.h",
+              "RelativeDocumentMoniker": "TextClearButton.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\TextClearButton.h",
+              "RelativeToolTip": "TextClearButton.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:40:32.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Number7Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number7Button.h",
+              "RelativeDocumentMoniker": "Number7Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number7Button.h",
+              "RelativeToolTip": "Number7Button.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:57.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Number8Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number8Button.h",
+              "RelativeDocumentMoniker": "Number8Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number8Button.h",
+              "RelativeToolTip": "Number8Button.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:40:05.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Number4Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number4Button.h",
+              "RelativeDocumentMoniker": "Number4Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number4Button.h",
+              "RelativeToolTip": "Number4Button.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:26.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Number3Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Number3Button.h",
+              "RelativeDocumentMoniker": "Number3Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Number3Button.h",
+              "RelativeToolTip": "Number3Button.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:39:17.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Button.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Button.h",
+              "RelativeDocumentMoniker": "Button.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Button.h",
+              "RelativeToolTip": "Button.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T03:15:37.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClientSocket.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\ClientSocket.h",
+              "RelativeDocumentMoniker": "ClientSocket.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\ClientSocket.h",
+              "RelativeToolTip": "ClientSocket.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-11T04:18:08.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Rectangle.h",
+              "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Rectangle.h",
+              "RelativeDocumentMoniker": "Rectangle.h",
+              "ToolTip": "C:\\Work\\TCP-IP_Client\\Rectangle.h",
+              "RelativeToolTip": "Rectangle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-09T08:09:17.786Z"
             }
           ]
         }
