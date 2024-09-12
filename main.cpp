@@ -22,7 +22,6 @@ int SDL_main(int argc, char* argv[])
     SDL_Event MyEvent;
     Socket MySocket;
 
-
     MyWindow.Render(); // Surface 만들기
     MyUI.Render(MyWindow.GetSurface()); //Surface에 버튼 그리기
     MyWindow.DrawResultBoard();
@@ -47,7 +46,6 @@ int SDL_main(int argc, char* argv[])
     bool bIsRunning = true;
     while (bIsRunning)
     {
-
         while (SDL_PollEvent(&MyEvent))
         {
             MyUI.HandleEvent(MyEvent);
@@ -57,9 +55,9 @@ int SDL_main(int argc, char* argv[])
             }
         }
         MyWindow.Update();
-
     }
 
+    MySocket.CloseSocket();
     SDL_Quit();
     return 0;
 }

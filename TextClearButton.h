@@ -26,16 +26,8 @@ public:
         }
 
         MyText.CurrentText.clear();
-
         MyText.ResultTextSurface = TTF_RenderText_Solid(MyText.Font, MyText.CurrentText.c_str(), MyText.ResultTextColor);  // 수정된 텍스트로 새로운 서페이스를 생성
-        if (MyText.ResultTextSurface == nullptr)
-        {
-            printf("Font Missing %s\n", TTF_GetError());
-        }
-        else
-        {
-            SDL_BlitSurface(MyText.ResultTextSurface, nullptr, MyWindow.GetSurface(), &MyText.ResultTextPosition); // 새 텍스트를 화면에 그린다
-        }
+        SDL_BlitSurface(MyText.ResultTextSurface, nullptr, MyWindow.GetSurface(), &MyText.ResultTextPosition); // 새 텍스트를 화면에 그린다
     }
 
 };

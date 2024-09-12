@@ -10,15 +10,9 @@ extern Text MyText;
 class ResultButton : public Button
 {
 public:
-
     Socket MySocket;
 
-    ResultButton(int x, int y, int w, int h) : Button(x, y, w, h)
-    {
-    }
-    ~ResultButton()
-    {
-    }
+    ResultButton( int x, int y, int w, int h): Button(x, y, w, h) {}
 
     void HandleLeftClick() override
     {
