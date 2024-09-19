@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Socket.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\ResultButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:ResultButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:Button.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|solutionrelative:TextClearButton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B023D47F-FE65-49A1-A278-D103B95B41D6}|BreakLimit_C_Client.vcxproj|C:\\Work\\TCP-IP_Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -64,40 +64,40 @@
               "RelativeDocumentMoniker": "Socket.h",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\Socket.h",
               "RelativeToolTip": "Socket.h",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-11T08:30:04.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Button.h",
               "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\Button.h",
               "RelativeDocumentMoniker": "Button.h",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\Button.h",
               "RelativeToolTip": "Button.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-11T03:15:37.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ResultButton.h",
               "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\ResultButton.h",
               "RelativeDocumentMoniker": "ResultButton.h",
               "ToolTip": "C:\\Work\\TCP-IP_Client\\ResultButton.h",
               "RelativeToolTip": "ResultButton.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-11T07:36:09.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "TextClearButton.h",
               "DocumentMoniker": "C:\\Work\\TCP-IP_Client\\TextClearButton.h",
               "RelativeDocumentMoniker": "TextClearButton.h",
@@ -131,7 +131,8 @@
               "RelativeToolTip": "LastTextDeleteButton.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-11T04:56:02.888Z"
+              "WhenOpened": "2024-09-11T04:56:02.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

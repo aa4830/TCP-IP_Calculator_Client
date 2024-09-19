@@ -3,7 +3,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <WinSock2.h>
-#include <stdio.h>
+#include <iostream>
 #include "Text.h"
 #include "Window.h"
 #include <string>
@@ -26,7 +26,7 @@ public:
         sockaddr_in ServerSocketAddress;
         memset(&ServerSocketAddress, 0, sizeof(ServerSocketAddress));
         ServerSocketAddress.sin_family = AF_INET;
-        ServerSocketAddress.sin_addr.s_addr = inet_addr("192.168.3.164");
+        ServerSocketAddress.sin_addr.s_addr = inet_addr("192.168.0.108");
         ServerSocketAddress.sin_port = htons(10880);
         if (connect(ServerSocket, (SOCKADDR*)&ServerSocketAddress, sizeof(ServerSocketAddress)) == SOCKET_ERROR)
         {
@@ -71,7 +71,7 @@ public:
                 if (result == SOCKET_ERROR)
                 {
                     int errorCode = WSAGetLastError();
-                    std::cout << errorCode << std::endl;
+                    cout << errorCode << endl;
                 }
                 Recv();
     }
